@@ -1,0 +1,84 @@
+/* Declarations */
+%{
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include "./ytab.h"
+%}
+
+/* regular Definations */
+if_reg "if"
+else_reg "else"
+VARIABLE [a-zA-Z][a-zA-Z0-9]*
+ASSIGNOP "="
+ADDOP "+"
+SUBOP "-"
+DIVOP "/"
+MULTIOP '*'
+ANDCOMP "==" 
+ORCOMP "||" 
+NOTCOMP "!"
+SMALLBRACES "(" | ")" 
+CURLY_BRACES "{" | "}"
+DIGITS [0-9]+
+FLOATS [0-9]+"."[0-9]+
+END_ST ";"
+
+/* Rules */
+%%
+{if_reg} {
+    return IF_CONDITIONAL_START;  
+}
+{else_reg} {
+    return ELSE_CONDITONAL_START;            
+}
+{VARIABLE} {
+    return indentifier;
+}
+{DIGITS} {
+    return const_id;
+}
+{FLOATS} {
+    return const_id;
+}
+{DIVOP} {
+    return divop;
+}
+{MULTIOP} {
+    return multiop;
+}
+{ADDOP} {
+    return addop;
+}
+{SUBOP} {
+    return subop;
+}
+
+{ANDCOMP} {
+    return andcomp;
+}
+{NOTCOMP} {
+    return notcomp;
+}
+{ORCOMP} {
+    return orcomp;
+}
+{ASSIGNOP} {
+    return *yytext;
+}
+{SMALLBRACES} {
+    return *yytext;
+}
+{CURLY_BRACES} {
+    return *yytext;
+}
+{END_ST} {
+    return *yytext;
+}
+
+%%
+/* Auxilary functions */
+
+int yywrap() {
+    return 1;
+}
+
