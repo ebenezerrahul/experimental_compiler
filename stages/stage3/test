@@ -1,9 +1,19 @@
 begin 
-a = 12 + 1;
-b = 13;
-c = a * b + 1;
+i = 5;
+a=1;
+k = 1 + ( 2 + ( 3 + ( 4 + (5 + (6 + ( 7 ) )) ) ) );
+i = 0;
+while(i != 6) do
+    i = i + 1;
+    j = 0;
+    while j < 5 do 
+        j = j + 1;
+        a = a + 1;
+        break;
+    endwhile;
+    continue;
+endwhile;
+
 write(a);
-write(b);
-write(c);
-write(c/10);
+write(5);
 end

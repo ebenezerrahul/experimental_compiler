@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 #include <stdlib.h>
 #include "registers.h"
 
@@ -27,12 +27,20 @@ extern const int no_stmt ;
 extern const int assign_stmt ;
 extern const int read_stmt ;
 extern const int write_stmt ;
+extern const int if_stmt;
+extern const int then_stmt;
+extern const int while_stmt;
+extern const int break_stmt;
+extern const int continue_stmt;
 
 
 /* types  */
 extern const int type_int;
 extern const int type_none;
 extern const int type_bool;
+
+
+
 extern  FILE *target_file;
 extern int regs_t[16];
 
@@ -41,6 +49,7 @@ typedef struct tnode{
     int opcode;
     int type_t;
     int stmt_type_t;
+    int num_regs;
     struct tnode *left, *right;
 
 }tnode;
@@ -56,10 +65,16 @@ void postorder_print(tnode*);
 
 void print(void (*func) (tnode*), tnode*);
 
-int evaluate(tnode *);
+int evaluateCode(tnode *);
+
+int evaluateCodeStmt(tnode *);
 
 reg_idx genCode(tnode *curr); 
 
 int type_check(tnode *left, tnode *right);
 
 reg_idx genCodeStmt(tnode *curr);
+
+int getLabel();
+
+void genOptimizedCodeO1(tnode*);

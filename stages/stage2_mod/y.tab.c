@@ -1521,12 +1521,12 @@ yyerror(char const *s)
 
 
 int main(int argc, char *argv[]) {
-
-    /*if(argc > 1) {*/
-        /*FILE *fp = fopen(argv[1],"r");*/
-        /*if(fp)*/
-            /*yyin = fp;*/
-    /*}*/
+    extern FILE *yyin;
+    if(argc > 1) {
+        FILE *fp = fopen(argv[1],"r");
+        if(fp)
+            yyin = fp;
+    }
     for(int i = 0; i < 16; i++){
         regs_t[i] = 0;
     }
@@ -1535,8 +1535,8 @@ int main(int argc, char *argv[]) {
     regs_init();
     fprintf(target_file,"MOV BP, SP\nADD BP, 26\nADD SP, 27\n");
     yyparse(); 
-    printf("INTERPRETTING\n");
-    evaluateCode(root);
+    /*printf("INTERPRETTING\n");*/
+    /*evaluateCode(root);*/
     fclose(target_file);
 
     return 1;

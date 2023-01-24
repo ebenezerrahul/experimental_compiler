@@ -64,10 +64,20 @@ extern int yydebug;
     EQ = 265,                      /* EQ  */
     WRITE = 266,                   /* WRITE  */
     READ = 267,                    /* READ  */
-    ADD = 268,                     /* ADD  */
-    SUB = 269,                     /* SUB  */
-    MUL = 270,                     /* MUL  */
-    DIV = 271                      /* DIV  */
+    IF = 268,                      /* IF  */
+    THEN = 269,                    /* THEN  */
+    ELSE = 270,                    /* ELSE  */
+    ENDIF = 271,                   /* ENDIF  */
+    WHILE = 272,                   /* WHILE  */
+    DO = 273,                      /* DO  */
+    ENDWHILE = 274,                /* ENDWHILE  */
+    BREAK = 275,                   /* BREAK  */
+    CONTINUE = 276,                /* CONTINUE  */
+    ADD = 277,                     /* ADD  */
+    SUB = 278,                     /* SUB  */
+    MUL = 279,                     /* MUL  */
+    DIV = 280,                     /* DIV  */
+    relop = 281                    /* relop  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -86,10 +96,20 @@ extern int yydebug;
 #define EQ 265
 #define WRITE 266
 #define READ 267
-#define ADD 268
-#define SUB 269
-#define MUL 270
-#define DIV 271
+#define IF 268
+#define THEN 269
+#define ELSE 270
+#define ENDIF 271
+#define WHILE 272
+#define DO 273
+#define ENDWHILE 274
+#define BREAK 275
+#define CONTINUE 276
+#define ADD 277
+#define SUB 278
+#define MUL 279
+#define DIV 280
+#define relop 281
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -99,7 +119,7 @@ union YYSTYPE
 
 struct tnode *t_node;
 
-#line 103 "y.tab.h"
+#line 123 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
