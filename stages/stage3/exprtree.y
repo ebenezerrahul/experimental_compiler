@@ -11,6 +11,7 @@ int res;
 
 #include "exprtree.h"
 tnode * root;
+
 %}
 
 
@@ -186,7 +187,7 @@ int main(int argc, char *argv[]) {
     /*evaluateCode(root);*/
     fclose(target_file);
 
-printf("WHAT !!\n");
+    printf("WHAT !!\n");
     target_file = fopen("expropt.xsm", "w");
     fprintf(target_file, "%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", 0, 2056,0,0,0,0,0,0);
     regs_init();

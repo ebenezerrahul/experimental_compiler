@@ -1,0 +1,9 @@
+begin 
+a = 12 + 1;
+b = 13;
+c = a * b + 1;
+write(a);
+write(b);
+write(c);
+write(c/10);
+end

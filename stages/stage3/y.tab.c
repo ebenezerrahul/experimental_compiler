@@ -105,10 +105,7 @@ tnode * root;
 #  endif
 # endif
 
-/* Use api.header.include to #include this header
-   instead of duplicating it here.  */
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
+
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -191,7 +188,7 @@ union YYSTYPE
 
 struct tnode *t_node;
 
-#line 195 "y.tab.c"
+#line 192 "y.tab.c"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -206,7 +203,7 @@ extern YYSTYPE yylval;
 int yyparse (void);
 
 
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+
 /* Symbol kind.  */
 enum yysymbol_kind_t
 {
@@ -1242,7 +1239,7 @@ yyreduce:
             root = (yyvsp[-1].t_node);
             return 0;
         }
-#line 1246 "y.tab.c"
+#line 1243 "y.tab.c"
     break;
 
   case 5: /* STATEMENTS: STATEMENT  */
@@ -1250,7 +1247,7 @@ yyreduce:
                         {
             (yyval.t_node) = createTnode(NULL, opcode_nop, type_none, no_stmt, (yyvsp[0].t_node), NULL);
            }
-#line 1254 "y.tab.c"
+#line 1251 "y.tab.c"
     break;
 
   case 6: /* STATEMENTS: STATEMENT STATEMENTS  */
@@ -1258,7 +1255,7 @@ yyreduce:
                                   {
             (yyval.t_node) = createTnode(NULL, opcode_nop, type_none, no_stmt, (yyvsp[-1].t_node), (yyvsp[0].t_node));
            }
-#line 1262 "y.tab.c"
+#line 1259 "y.tab.c"
     break;
 
   case 7: /* STATEMENT: WRITE op_brace expr closing_brace endst  */
@@ -1269,7 +1266,7 @@ yyreduce:
             (yyval.t_node) = createTnode(NULL, opcode_nop, type_none, write_stmt, (yyvsp[-2].t_node), NULL);
 
             }
-#line 1273 "y.tab.c"
+#line 1270 "y.tab.c"
     break;
 
   case 8: /* STATEMENT: READ op_brace ID closing_brace endst  */
@@ -1279,7 +1276,7 @@ yyreduce:
             printf("ID");
             (yyval.t_node) = createTnode(NULL, opcode_nop, type_none, read_stmt, (yyvsp[-2].t_node), NULL);
           }
-#line 1283 "y.tab.c"
+#line 1280 "y.tab.c"
     break;
 
   case 9: /* STATEMENT: ASSIGNMENT  */
@@ -1287,7 +1284,7 @@ yyreduce:
                        {
           (yyval.t_node) = (yyvsp[0].t_node);
 }
-#line 1291 "y.tab.c"
+#line 1288 "y.tab.c"
     break;
 
   case 10: /* STATEMENT: CONDITIONAL_STMT endst  */
@@ -1295,7 +1292,7 @@ yyreduce:
                                      {
             (yyval.t_node) = (yyvsp[-1].t_node);
             }
-#line 1299 "y.tab.c"
+#line 1296 "y.tab.c"
     break;
 
   case 11: /* STATEMENT: WHILE_STMT endst  */
@@ -1303,7 +1300,7 @@ yyreduce:
                                {
             (yyval.t_node) = (yyvsp[-1].t_node);
             }
-#line 1307 "y.tab.c"
+#line 1304 "y.tab.c"
     break;
 
   case 12: /* STATEMENT: BREAK endst  */
@@ -1311,7 +1308,7 @@ yyreduce:
                           {
                 (yyval.t_node) = (yyvsp[-1].t_node);
             }
-#line 1315 "y.tab.c"
+#line 1312 "y.tab.c"
     break;
 
   case 13: /* STATEMENT: CONTINUE endst  */
@@ -1319,7 +1316,7 @@ yyreduce:
                              {
                 (yyval.t_node) = (yyvsp[-1].t_node);
             }
-#line 1323 "y.tab.c"
+#line 1320 "y.tab.c"
     break;
 
   case 14: /* ASSIGNMENT: ID EQ expr endst  */
@@ -1330,7 +1327,7 @@ yyreduce:
            (yyvsp[-2].t_node)->right = (yyvsp[-1].t_node);
            (yyval.t_node) = createTnode(NULL, opcode_nop, type_none, assign_stmt, (yyvsp[-2].t_node), NULL);
            }
-#line 1334 "y.tab.c"
+#line 1331 "y.tab.c"
     break;
 
   case 15: /* CONDITIONAL_STMT: IF BOOLEAN THEN STATEMENTS ENDIF  */
@@ -1340,7 +1337,7 @@ yyreduce:
                     (yyvsp[-4].t_node) = createTnode(NULL, opcode_nop, type_none, if_stmt, (yyvsp[-3].t_node), (yyvsp[-2].t_node)); 
                     (yyval.t_node) = (yyvsp[-4].t_node);
                  }
-#line 1344 "y.tab.c"
+#line 1341 "y.tab.c"
     break;
 
   case 16: /* CONDITIONAL_STMT: IF BOOLEAN THEN STATEMENTS ELSE STATEMENTS ENDIF  */
@@ -1350,7 +1347,7 @@ yyreduce:
                     (yyvsp[-6].t_node) = createTnode(NULL, opcode_nop, type_none, if_stmt, (yyvsp[-5].t_node), (yyvsp[-4].t_node)); 
                     (yyval.t_node) = (yyvsp[-6].t_node);
                  }
-#line 1354 "y.tab.c"
+#line 1351 "y.tab.c"
     break;
 
   case 17: /* WHILE_STMT: WHILE BOOLEAN DO STATEMENTS ENDWHILE  */
@@ -1359,7 +1356,7 @@ yyreduce:
            (yyvsp[-4].t_node) = createTnode(NULL, opcode_nop, type_none, while_stmt, (yyvsp[-3].t_node), (yyvsp[-1].t_node));
            (yyval.t_node) = (yyvsp[-4].t_node);
            }
-#line 1363 "y.tab.c"
+#line 1360 "y.tab.c"
     break;
 
   case 18: /* BOOLEAN: expr relop expr  */
@@ -1369,7 +1366,7 @@ yyreduce:
         (yyvsp[-1].t_node)->right = (yyvsp[0].t_node);
         (yyval.t_node) = (yyvsp[-1].t_node);
         }
-#line 1373 "y.tab.c"
+#line 1370 "y.tab.c"
     break;
 
   case 19: /* BOOLEAN: op_brace BOOLEAN closing_brace  */
@@ -1377,7 +1374,7 @@ yyreduce:
                                          {
             (yyval.t_node) = (yyvsp[-1].t_node);
         }
-#line 1381 "y.tab.c"
+#line 1378 "y.tab.c"
     break;
 
   case 20: /* expr: expr ADD expr  */
@@ -1389,7 +1386,7 @@ yyreduce:
     (yyvsp[-1].t_node)->right = (yyvsp[0].t_node);
     (yyval.t_node) = (yyvsp[-1].t_node);
 }
-#line 1393 "y.tab.c"
+#line 1390 "y.tab.c"
     break;
 
   case 21: /* expr: expr SUB expr  */
@@ -1400,7 +1397,7 @@ yyreduce:
     (yyvsp[-1].t_node)->right = (yyvsp[0].t_node);
     (yyval.t_node) = (yyvsp[-1].t_node);
 }
-#line 1404 "y.tab.c"
+#line 1401 "y.tab.c"
     break;
 
   case 22: /* expr: expr MUL expr  */
@@ -1411,7 +1408,7 @@ yyreduce:
     (yyvsp[-1].t_node)->right = (yyvsp[0].t_node);
     (yyval.t_node) = (yyvsp[-1].t_node);
      }
-#line 1415 "y.tab.c"
+#line 1412 "y.tab.c"
     break;
 
   case 23: /* expr: expr DIV expr  */
@@ -1422,7 +1419,7 @@ yyreduce:
     (yyvsp[-1].t_node)->right = (yyvsp[0].t_node);
     (yyval.t_node) = (yyvsp[-1].t_node);
     }
-#line 1426 "y.tab.c"
+#line 1423 "y.tab.c"
     break;
 
   case 24: /* expr: op_brace expr closing_brace  */
@@ -1431,23 +1428,23 @@ yyreduce:
     
     (yyval.t_node) = (yyvsp[-1].t_node);
 }
-#line 1435 "y.tab.c"
+#line 1432 "y.tab.c"
     break;
 
   case 25: /* expr: INTEGER  */
 #line 150 "exprtree.y"
                {(yyval.t_node) = (yyvsp[0].t_node);}
-#line 1441 "y.tab.c"
+#line 1438 "y.tab.c"
     break;
 
   case 26: /* expr: ID  */
 #line 151 "exprtree.y"
           {(yyval.t_node) = (yyvsp[0].t_node);}
-#line 1447 "y.tab.c"
+#line 1444 "y.tab.c"
     break;
 
 
-#line 1451 "y.tab.c"
+#line 1448 "y.tab.c"
 
       default: break;
     }
@@ -1663,19 +1660,19 @@ int main(int argc, char *argv[]) {
     for(int i = 0; i < 16; i++){
         regs_t[i] = 0;
     }
-    target_file = fopen("expr.xsm", "w");
-    fprintf(target_file, "%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", 0, 2056,0,0,0,0,0,0);
+    /*target_file = fopen("expr.xsm", "w");*/
+    /*fprintf(target_file, "%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", 0, 2056,0,0,0,0,0,0);*/
     regs_init();
-    fprintf(target_file,"MOV BP, SP\nADD BP, 26\nADD SP, 27\n");
+    /*fprintf(target_file,"MOV BP, SP\nADD BP, 26\nADD SP, 27\n");*/
     yyparse(); 
-    printf("HELLO\n");
-    genCode(root);
-    printf("WHAT !!\n");
-    /*printf("INTERPRETTING\n");*/
-    /*evaluateCode(root);*/
-    fclose(target_file);
+    /*printf("HELLO\n");*/
+    /*genCode(root);*/
+    /*printf("WHAT !!\n");*/
+    /*[>printf("INTERPRETTING\n");<]*/
+    /*[>evaluateCode(root);<]*/
+    /*fclose(target_file);*/
 
-printf("WHAT !!\n");
+    printf("WHAT !!\n");
     target_file = fopen("expropt.xsm", "w");
     fprintf(target_file, "%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", 0, 2056,0,0,0,0,0,0);
     regs_init();
