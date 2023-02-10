@@ -120,6 +120,31 @@ int evaluateExpr(ExprNode *curr) {
     }
     else if(curr->is_op)
     {
+        if(curr->op_code == OP_AND) {
+            int p,q;
+            p = evaluateExpr(curr->left);
+            q = evaluateExpr(curr->right);
+            fprintf(target_file, "MUL R%d, R%d\n", p,q);
+            free_reg();
+            return p;
+        }
+        if(curr->op_code == OP_OR) {
+            int p,q;
+            p = evaluateExpr(curr->left);
+            q = evaluateExpr(curr->right);
+            fprintf(target_file, "ADD R%d, R%d\n", p,q);
+            free_reg();
+            return p;
+        }
+        if(curr->op_code == OP_NOT) {
+            int p;
+            p = evaluateExpr(curr->left);
+            int r = get_reg();
+            fprintf(target_file,"MOV R%d, 1", r);
+            fprintf(target_file, "NE R%d, R%d\n", p, r);
+            free_reg();
+            return p;
+        }
         if(curr->op_code == OP_ADD) 
         { 
             int p,q;

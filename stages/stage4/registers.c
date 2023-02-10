@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "exprtree.h"
 #include <string.h>
 
 int regs_st[2401];
+extern int regs_t[];
 
 void free_reg() {
     for(int i = 15; i >= 0; i--){

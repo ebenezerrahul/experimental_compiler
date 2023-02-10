@@ -20,6 +20,9 @@ keyword keywords[] = {
 	"int"       ,   INT,
     "decl"      ,   DECLBEG,
     "enddecl"   ,   ENDDECL,
+    "and"       ,   AND,
+    "or"        ,   OR,
+    "not"       ,   NOT,
 	 0          ,   0
 };
 

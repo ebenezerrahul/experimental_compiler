@@ -74,12 +74,15 @@ extern int yydebug;
     CONTINUE = 275,                /* CONTINUE  */
     READ = 276,                    /* READ  */
     WRITE = 277,                   /* WRITE  */
-    EQ = 278,                      /* EQ  */
-    NE = 279,                      /* NE  */
-    GE = 280,                      /* GE  */
-    GT = 281,                      /* GT  */
-    LE = 282,                      /* LE  */
-    LT = 283                       /* LT  */
+    NOT = 278,                     /* NOT  */
+    AND = 279,                     /* AND  */
+    OR = 280,                      /* OR  */
+    EQ = 281,                      /* EQ  */
+    NE = 282,                      /* NE  */
+    GE = 283,                      /* GE  */
+    GT = 284,                      /* GT  */
+    LE = 285,                      /* LE  */
+    LT = 286                       /* LT  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -108,12 +111,15 @@ extern int yydebug;
 #define CONTINUE 275
 #define READ 276
 #define WRITE 277
-#define EQ 278
-#define NE 279
-#define GE 280
-#define GT 281
-#define LE 282
-#define LT 283
+#define NOT 278
+#define AND 279
+#define OR 280
+#define EQ 281
+#define NE 282
+#define GE 283
+#define GT 284
+#define LE 285
+#define LT 286
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -127,7 +133,7 @@ char *str;
 int val;
 struct DeclList *decl;
 
-#line 131 "y.tab.h"
+#line 137 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;

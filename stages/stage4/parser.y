@@ -20,7 +20,7 @@ struct DeclList *decl;
 }
 
  /*** YACC Declarations section ***/
-%token BEG END INT STRING DECLBEG ENDDECL
+%token BEG END INT STRING DECLBEG ENDDECL 
 %token<val> INT_CONST
 %token<str> STR_CONST ID
 %type<snode> STATEMENT STATEMENTS 
@@ -37,10 +37,12 @@ struct DeclList *decl;
 %token BREAK CONTINUE
 %token READ WRITE
 %type<expr> EXPR REFERENCE 
+%nonassoc NOT
+%left AND OR
 %nonassoc<expr> EQ NE GE GT LE LT 
 %left '+' '-' 
 %left '*' '/'
-%nonassoc '='
+%nonassoc '=' 
 
 %%
 
@@ -171,6 +173,11 @@ ASSIGN_STATEMENT                : REFERENCE '=' EXPR
                                     temp.stmt_type = assign_stmt;
                                     temp.expr = $<expr>3;
                                     temp.reference = $<expr>1;
+                                    if($<expr>1->data_type != $<expr>3->data_type)
+                                    {
+                                    printf("INVALID ASSGIGNMENT\n");
+                                        exit(1);
+                                    }
                                     $<snode>$ = createSnode(temp);
                                 }
                                 ;
@@ -261,6 +268,10 @@ READ_STATEMENT                  : READ '(' REFERENCE ')'
 
 CONDITIONAL                     : IF EXPR THEN STATEMENTS ENDIF
                                 {
+                                    if($<expr>2->data_type != bool_type) {
+                                    printf("error expected boolen!\n");
+                                    exit(0);
+                                    }
                                     Snode temp;
                                     initializeSnode(&temp);
                                     temp.stmt_type = if_stmt;
@@ -270,6 +281,10 @@ CONDITIONAL                     : IF EXPR THEN STATEMENTS ENDIF
                                 }
                                 | IF EXPR THEN STATEMENTS ELSE STATEMENTS ENDIF
                                 {
+                                    if($<expr>2->data_type != bool_type) {
+                                    printf("error expected boolen!\n");
+                                    exit(0);
+                                    }
                                     Snode temp;
                                     initializeSnode(&temp);
                                     temp.stmt_type = if_stmt;
@@ -282,6 +297,10 @@ CONDITIONAL                     : IF EXPR THEN STATEMENTS ENDIF
 
 WHILE_STMT                      : WHILE EXPR DO STATEMENTS ENDWHILE
                                 {
+                                    if($<expr>2->data_type != bool_type) {
+                                    printf("error expected boolen!\n");
+                                    exit(0);
+                                    }
                                     Snode temp;
                                     initializeSnode(&temp);
                                     temp.stmt_type = while_stmt;
@@ -450,6 +469,56 @@ EXPR                            : '(' EXPR ')'
                                     temp.str = $<str>1;
                                     $<expr>$ = createExprNode(temp);
                                     constructExprNode($<expr>$, NULL, NULL);
+                                }
+                                | EXPR AND EXPR 
+                                {
+                                    if($<expr>1->data_type != $<expr>3->data_type && $<expr>1->data_type != bool_type)
+                                    {
+                                        printf("LOGIAL OP ONLY BETWEEN BOOLEANS!\n");
+                                        exit(0);
+                                    }
+                                    ExprNode temp;
+                                    initializeExprNode(&temp);
+                                    temp.is_op = 1;
+                                    temp.op_code = OP_AND;
+                                    temp.data_type = bool_type;
+                                    temp.hasval = 0;
+                                    $<expr>$ = createExprNode(temp);
+                                    constructExprNode($<expr>$, $<expr>1, $<expr>3);
+                                }
+                                | EXPR OR EXPR 
+                                {
+                                    if($<expr>1->data_type != $<expr>3->data_type && $<expr>1->data_type != bool_type)
+                                    {
+                                        printf("LOGIAL OP ONLY BETWEEN BOOLEANS!\n");
+                                        exit(0);
+                                    }
+                                    ExprNode temp;
+                                    initializeExprNode(&temp);
+                                    temp.is_op = 1;
+                                    temp.op_code = OP_OR;
+                                    temp.data_type = bool_type;
+                                    temp.hasval = 0;
+                                    $<expr>$ = createExprNode(temp);
+                                    constructExprNode($<expr>$, $<expr>1, $<expr>3);
+
+                                }
+                                | NOT EXPR 
+                                {
+                                    if($<expr>2->data_type != bool_type)
+                                    {
+                                        printf("LOGIAL OP ONLY BETWEEN BOOLEANS!\n");
+                                        exit(0);
+                                    }
+                                    ExprNode temp;
+                                    initializeExprNode(&temp);
+                                    temp.is_op = 1;
+                                    temp.op_code = OP_NOT;
+                                    temp.data_type = bool_type;
+                                    temp.hasval = 0;
+                                    $<expr>$ = createExprNode(temp);
+                                    constructExprNode($<expr>$, $<expr>2, NULL);
+
                                 }
                                 ;
 

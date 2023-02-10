@@ -39,8 +39,8 @@ extern const int DEREFOP;
 extern const int INDEXOP;
 
 //logialOperators
-extern const int LG_ADD; 
-extern const int LG_NOT; 
-extern const int LG_OR ; 
+extern const int OP_AND; 
+extern const int OP_NOT; 
+extern const int OP_OR ; 
 
 

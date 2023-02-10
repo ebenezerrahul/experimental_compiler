@@ -40,7 +40,7 @@ const int DEREFOP = 11;
 const int INDEXOP = 12;
 
 //logialOperators
-const int LG_ADD = 1; 
-const int LG_NOT = 2; 
-const int LG_OR  = 3; 
+const int OP_AND = 1; 
+const int OP_NOT = 2; 
+const int OP_OR  = 3; 
 
