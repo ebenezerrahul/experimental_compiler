@@ -1,0 +1,7 @@
+decl
+    int a, b[9], c;
+enddecl
+
+begin
+    write(77);
+end

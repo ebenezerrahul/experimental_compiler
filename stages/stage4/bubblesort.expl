@@ -3,6 +3,7 @@ decl
 enddecl
 begin
   read(n);
+  write(n);
   i=0;
   while(i<n) do
     read(arr[i]);

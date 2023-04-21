@@ -102,10 +102,7 @@ extern Snode  * root;
 #  endif
 # endif
 
-/* Use api.header.include to #include this header
-   instead of duplicating it here.  */
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
+
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -202,7 +199,7 @@ char *str;
 int val;
 struct DeclList *decl;
 
-#line 206 "y.tab.c"
+#line 203 "y.tab.c"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -217,7 +214,7 @@ extern YYSTYPE yylval;
 int yyparse (void);
 
 
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+
 /* Symbol kind.  */
 enum yysymbol_kind_t
 {
@@ -1340,7 +1337,7 @@ yyreduce:
                                 {
                                     setType((yyvsp[-2].decl),int_type);   
                                 }
-#line 1344 "y.tab.c"
+#line 1341 "y.tab.c"
     break;
 
   case 5: /* DECL: STRING DECLLIST ';' DECL  */
@@ -1348,7 +1345,7 @@ yyreduce:
                                 {
                                     setType((yyvsp[-2].decl), str_type);
                                 }
-#line 1352 "y.tab.c"
+#line 1349 "y.tab.c"
     break;
 
   case 6: /* DECL: STRING DECLLIST ';'  */
@@ -1356,7 +1353,7 @@ yyreduce:
                                 {
                                     setType((yyvsp[-1].decl), str_type);
                                 }
-#line 1360 "y.tab.c"
+#line 1357 "y.tab.c"
     break;
 
   case 7: /* DECL: INT DECLLIST ';'  */
@@ -1364,7 +1361,7 @@ yyreduce:
                                 {
                                     setType((yyvsp[-1].decl),int_type);   
                                 }
-#line 1368 "y.tab.c"
+#line 1365 "y.tab.c"
     break;
 
   case 8: /* DECLLIST: ID ',' DECLLIST  */
@@ -1373,7 +1370,7 @@ yyreduce:
                                     Gsymbol *curr = installSymbol((yyvsp[-2].str), 1 , data_t);
                                     (yyval.decl) = createDeclList(curr,(yyvsp[0].decl));
                                 }
-#line 1377 "y.tab.c"
+#line 1374 "y.tab.c"
     break;
 
   case 9: /* DECLLIST: ID  */
@@ -1382,7 +1379,7 @@ yyreduce:
                                     Gsymbol *curr = installSymbol((yyvsp[0].str), 1, data_t);
                                     (yyval.decl) = createDeclList(curr,NULL);
                                 }
-#line 1386 "y.tab.c"
+#line 1383 "y.tab.c"
     break;
 
   case 10: /* DECLLIST: ARRAYDECL ',' DECLLIST  */
@@ -1391,7 +1388,7 @@ yyreduce:
                                     (yyvsp[-2].decl)->next = (yyvsp[0].decl);
                                     (yyval.decl) = (yyvsp[-2].decl);
                                 }
-#line 1395 "y.tab.c"
+#line 1392 "y.tab.c"
     break;
 
   case 11: /* DECLLIST: ARRAYDECL  */
@@ -1399,7 +1396,7 @@ yyreduce:
                                 {
                                     (yyval.decl) = (yyvsp[0].decl);
                                 }
-#line 1403 "y.tab.c"
+#line 1400 "y.tab.c"
     break;
 
   case 12: /* ARRAYDECL: ID '[' INT_CONST ']'  */
@@ -1411,7 +1408,7 @@ yyreduce:
                                     curr->columnSize = -1;
                                     (yyval.decl) = createDeclList(curr,NULL);
                                 }
-#line 1415 "y.tab.c"
+#line 1412 "y.tab.c"
     break;
 
   case 13: /* ARRAYDECL: ID '[' INT_CONST ']' '[' INT_CONST ']'  */
@@ -1423,7 +1420,7 @@ yyreduce:
                                     curr->columnSize = (yyvsp[-1].val);
                                     (yyval.decl) = createDeclList(curr,NULL);
                                 }
-#line 1427 "y.tab.c"
+#line 1424 "y.tab.c"
     break;
 
   case 15: /* PROGRAM: BEG STATEMENTS END  */
@@ -1431,7 +1428,7 @@ yyreduce:
                                 {
                                     root = (yyvsp[-1].snode);
                                 }
-#line 1435 "y.tab.c"
+#line 1432 "y.tab.c"
     break;
 
   case 16: /* STATEMENTS: STATEMENT STATEMENTS  */
@@ -1440,7 +1437,7 @@ yyreduce:
                                     (yyval.snode) = (yyvsp[-1].snode);
                                     (yyval.snode)->next = (yyvsp[0].snode);
                                 }
-#line 1444 "y.tab.c"
+#line 1441 "y.tab.c"
     break;
 
   case 17: /* STATEMENTS: STATEMENT  */
@@ -1449,7 +1446,7 @@ yyreduce:
                                     (yyval.snode) = (yyvsp[0].snode);
                                     (yyval.snode)->next = NULL;
                                 }
-#line 1453 "y.tab.c"
+#line 1450 "y.tab.c"
     break;
 
   case 18: /* STATEMENT: ASSIGN_STATEMENT ';'  */
@@ -1457,7 +1454,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-1].snode);
                                 }
-#line 1461 "y.tab.c"
+#line 1458 "y.tab.c"
     break;
 
   case 19: /* STATEMENT: WRITE_STATEMENT ';'  */
@@ -1465,7 +1462,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-1].snode);
                                 }
-#line 1469 "y.tab.c"
+#line 1466 "y.tab.c"
     break;
 
   case 20: /* STATEMENT: READ_STATEMENT ';'  */
@@ -1473,7 +1470,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-1].snode);
                                 }
-#line 1477 "y.tab.c"
+#line 1474 "y.tab.c"
     break;
 
   case 21: /* @1: %empty  */
@@ -1481,7 +1478,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-1].snode);
                                 }
-#line 1485 "y.tab.c"
+#line 1482 "y.tab.c"
     break;
 
   case 22: /* STATEMENT: CONDITIONAL ';' @1  */
@@ -1489,7 +1486,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-2].snode);
                                 }
-#line 1493 "y.tab.c"
+#line 1490 "y.tab.c"
     break;
 
   case 23: /* STATEMENT: BREAK_STATEMENT ';'  */
@@ -1497,7 +1494,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-1].snode);
                                 }
-#line 1501 "y.tab.c"
+#line 1498 "y.tab.c"
     break;
 
   case 24: /* STATEMENT: CONTINUE_STATEMENT ';'  */
@@ -1505,7 +1502,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-1].snode);
                                 }
-#line 1509 "y.tab.c"
+#line 1506 "y.tab.c"
     break;
 
   case 25: /* STATEMENT: WHILE_STMT ';'  */
@@ -1513,7 +1510,7 @@ yyreduce:
                                 {
                                     (yyval.snode) = (yyvsp[-1].snode);
                                 }
-#line 1517 "y.tab.c"
+#line 1514 "y.tab.c"
     break;
 
   case 26: /* ASSIGN_STATEMENT: REFERENCE '=' EXPR  */
@@ -1531,7 +1528,7 @@ yyreduce:
                                     }
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1535 "y.tab.c"
+#line 1532 "y.tab.c"
     break;
 
   case 27: /* REFERENCE: ID  */
@@ -1556,7 +1553,7 @@ yyreduce:
                                     temp.symbol = curr_sym;
                                     (yyval.expr) = createExprNode(temp);
                                 }
-#line 1560 "y.tab.c"
+#line 1557 "y.tab.c"
     break;
 
   case 28: /* REFERENCE: ARRAY  */
@@ -1565,7 +1562,7 @@ yyreduce:
                                     // check with array declaration
                                     (yyval.expr) = (yyvsp[0].expr);
                                 }
-#line 1569 "y.tab.c"
+#line 1566 "y.tab.c"
     break;
 
   case 29: /* ARRAY: ID '[' EXPR ']'  */
@@ -1585,7 +1582,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-1].expr), NULL);
                                 }
-#line 1589 "y.tab.c"
+#line 1586 "y.tab.c"
     break;
 
   case 30: /* ARRAY: ID '[' EXPR ']' '[' EXPR ']'  */
@@ -1605,7 +1602,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-4].expr), (yyvsp[-1].expr));
                                 }
-#line 1609 "y.tab.c"
+#line 1606 "y.tab.c"
     break;
 
   case 31: /* WRITE_STATEMENT: WRITE '(' EXPR ')'  */
@@ -1617,7 +1614,7 @@ yyreduce:
                                     temp.expr = (yyvsp[-1].expr);
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1621 "y.tab.c"
+#line 1618 "y.tab.c"
     break;
 
   case 32: /* READ_STATEMENT: READ '(' REFERENCE ')'  */
@@ -1629,7 +1626,7 @@ yyreduce:
                                     temp.reference = (yyvsp[-1].expr);
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1633 "y.tab.c"
+#line 1630 "y.tab.c"
     break;
 
   case 33: /* CONDITIONAL: IF EXPR THEN STATEMENTS ENDIF  */
@@ -1646,7 +1643,7 @@ yyreduce:
                                     temp.left = (yyvsp[-1].snode);
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1650 "y.tab.c"
+#line 1647 "y.tab.c"
     break;
 
   case 34: /* CONDITIONAL: IF EXPR THEN STATEMENTS ELSE STATEMENTS ENDIF  */
@@ -1664,7 +1661,7 @@ yyreduce:
                                     temp.right = (yyvsp[-1].snode);
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1668 "y.tab.c"
+#line 1665 "y.tab.c"
     break;
 
   case 35: /* WHILE_STMT: WHILE EXPR DO STATEMENTS ENDWHILE  */
@@ -1681,7 +1678,7 @@ yyreduce:
                                     temp.left = (yyvsp[-1].snode);
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1685 "y.tab.c"
+#line 1682 "y.tab.c"
     break;
 
   case 36: /* CONTINUE_STATEMENT: CONTINUE  */
@@ -1692,7 +1689,7 @@ yyreduce:
                                     temp.stmt_type = continue_stmt;
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1696 "y.tab.c"
+#line 1693 "y.tab.c"
     break;
 
   case 37: /* BREAK_STATEMENT: BREAK  */
@@ -1703,7 +1700,7 @@ yyreduce:
                                     temp.stmt_type = break_stmt;
                                     (yyval.snode) = createSnode(temp);
                                 }
-#line 1707 "y.tab.c"
+#line 1704 "y.tab.c"
     break;
 
   case 38: /* EXPR: '(' EXPR ')'  */
@@ -1711,7 +1708,7 @@ yyreduce:
                                 {
                                     (yyval.expr) = (yyvsp[-1].expr);
                                 }
-#line 1715 "y.tab.c"
+#line 1712 "y.tab.c"
     break;
 
   case 39: /* EXPR: EXPR '+' EXPR  */
@@ -1726,7 +1723,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1730 "y.tab.c"
+#line 1727 "y.tab.c"
     break;
 
   case 40: /* EXPR: EXPR '-' EXPR  */
@@ -1741,7 +1738,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1745 "y.tab.c"
+#line 1742 "y.tab.c"
     break;
 
   case 41: /* EXPR: EXPR '*' EXPR  */
@@ -1756,7 +1753,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1760 "y.tab.c"
+#line 1757 "y.tab.c"
     break;
 
   case 42: /* EXPR: EXPR '/' EXPR  */
@@ -1771,7 +1768,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1775 "y.tab.c"
+#line 1772 "y.tab.c"
     break;
 
   case 43: /* EXPR: EXPR EQ EXPR  */
@@ -1786,7 +1783,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1790 "y.tab.c"
+#line 1787 "y.tab.c"
     break;
 
   case 44: /* EXPR: EXPR NE EXPR  */
@@ -1802,7 +1799,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1806 "y.tab.c"
+#line 1803 "y.tab.c"
     break;
 
   case 45: /* EXPR: EXPR GT EXPR  */
@@ -1818,7 +1815,7 @@ yyreduce:
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
 
                                 }
-#line 1822 "y.tab.c"
+#line 1819 "y.tab.c"
     break;
 
   case 46: /* EXPR: EXPR GE EXPR  */
@@ -1833,7 +1830,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1837 "y.tab.c"
+#line 1834 "y.tab.c"
     break;
 
   case 47: /* EXPR: EXPR LE EXPR  */
@@ -1848,7 +1845,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1852 "y.tab.c"
+#line 1849 "y.tab.c"
     break;
 
   case 48: /* EXPR: EXPR LT EXPR  */
@@ -1863,7 +1860,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1867 "y.tab.c"
+#line 1864 "y.tab.c"
     break;
 
   case 49: /* EXPR: REFERENCE  */
@@ -1871,7 +1868,7 @@ yyreduce:
                                 {
                                     (yyval.expr) = (yyvsp[0].expr);
                                 }
-#line 1875 "y.tab.c"
+#line 1872 "y.tab.c"
     break;
 
   case 50: /* EXPR: INT_CONST  */
@@ -1886,7 +1883,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), NULL, NULL);
                                 }
-#line 1890 "y.tab.c"
+#line 1887 "y.tab.c"
     break;
 
   case 51: /* EXPR: STR_CONST  */
@@ -1901,7 +1898,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), NULL, NULL);
                                 }
-#line 1905 "y.tab.c"
+#line 1902 "y.tab.c"
     break;
 
   case 52: /* EXPR: EXPR AND EXPR  */
@@ -1921,7 +1918,7 @@ yyreduce:
                                     (yyval.expr) = createExprNode(temp);
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
                                 }
-#line 1925 "y.tab.c"
+#line 1922 "y.tab.c"
     break;
 
   case 53: /* EXPR: EXPR OR EXPR  */
@@ -1942,7 +1939,7 @@ yyreduce:
                                     constructExprNode((yyval.expr), (yyvsp[-2].expr), (yyvsp[0].expr));
 
                                 }
-#line 1946 "y.tab.c"
+#line 1943 "y.tab.c"
     break;
 
   case 54: /* EXPR: NOT EXPR  */
@@ -1963,11 +1960,11 @@ yyreduce:
                                     constructExprNode((yyval.expr), (yyvsp[0].expr), NULL);
 
                                 }
-#line 1967 "y.tab.c"
+#line 1964 "y.tab.c"
     break;
 
 
-#line 1971 "y.tab.c"
+#line 1968 "y.tab.c"
 
       default: break;
     }

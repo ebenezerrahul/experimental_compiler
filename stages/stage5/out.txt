@@ -1,0 +1,132 @@
+symbols initialized
+local symbols initialized
+
+  here a
+installing local symbol a 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+REINITIALIZED
+local symbols initialized
+HERE
+installing symbol sum
+searching symbol sum
+creating Symbol
+binding Address to symbol
+installed symbol
+
+
+
+  here a
+installing local symbol a 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+ 
+     
+         installing local symbol b 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+    
+    
+    searching the local symbol table
+found symbol
+
+     searching the local symbol table
+found symbol
+ EVALUATING ASSIGNMENT
+
+     searching the local symbol table
+found symbol
+
+    
+Here-1 
+searching symbol sum
+found symbol
+local symbols initialized
+Here0 
+Here1 
+Here 
+Generating code
+Allocating R0
+Allocating R1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+Got reference
+Allocating R1
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+
+  
+    
+         installing local symbol a 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+    
+    
+     searching the local symbol table
+found symbol
+ Function Call Heresearching symbol sum
+found symbol
+EVALUATING ASSIGNMENT
+
+    searching the local symbol table
+found symbol
+
+    
+installing symbol main
+searching symbol main
+creating Symbol
+binding Address to symbol
+installed symbol
+Generating code
+Generating Code for Assignment
+Allocating R0
+Got reference
+Generating code for function call
+Backing up regs
+Allocating R0
+freeing R0
+Pushed all the args!
+Generated code for function call
+Allocating R1
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+Generating code
+Code Generated!
