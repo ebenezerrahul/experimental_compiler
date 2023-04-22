@@ -1,0 +1,21 @@
+type
+List {
+    int data;
+    List next;
+}
+endtype
+
+decl
+    int a, b[9], c;
+    List MyList;
+enddecl
+
+int main() {
+    decl
+        int a;
+    enddecl
+begin
+    MyList.data = a;
+    MyList.next.data = a;
+end
+}
