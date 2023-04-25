@@ -1,0 +1,38 @@
+type
+
+Student
+{
+    string name;
+    int number;
+}
+
+endtype
+
+decl
+  Student myStudents[5];
+enddecl
+
+
+int main() {
+    decl
+        string name;
+    int number;
+
+    enddecl
+
+        begin
+        number = initialize();
+        myStudents[0] = alloc();
+        myStudents[0].name = "rahul";
+        myStudents[0].number = 1;
+        myStudents[1] = alloc();
+        myStudents[1].name = "deepak";
+        myStudents[1].number = 2;
+        write(myStudents[0].name);
+        write(myStudents[0].number);
+        write(myStudents[1].name);
+        write(myStudents[1].number);
+
+        end
+
+}

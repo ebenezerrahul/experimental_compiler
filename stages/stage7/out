@@ -1,0 +1,1036 @@
+symbols initialized
+local symbols initialized
+
+   installing symbol arr
+searching symbol arr
+creating Symbol
+binding Address to symbol
+installed symbol
+here1
+installing symbol n
+searching symbol n
+creating Symbol
+binding Address to symbol
+installed symbol
+here1
+installing symbol b
+searching symbol b
+creating Symbol
+binding Address to symbol
+installed symbol
+here1
+installing symbol a
+searching symbol a
+creating Symbol
+binding Address to symbol
+installed symbol
+herew
+Setting Type
+
+    here index
+installing local symbol index 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+  here newindex
+installing local symbol newindex 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+REINITIALIZED
+local symbols initialized
+HERE
+installing symbol swap
+searching symbol swap
+creating Symbol
+binding Address to symbol
+installed symbol
+
+    here temp
+installing local symbol temp 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+REINITIALIZED
+local symbols initialized
+HERE
+installing symbol readarr
+searching symbol readarr
+creating Symbol
+binding Address to symbol
+installed symbol
+
+    here temp
+installing local symbol temp 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+REINITIALIZED
+local symbols initialized
+HERE
+installing symbol writearr
+searching symbol writearr
+creating Symbol
+binding Address to symbol
+installed symbol
+
+     here low
+installing local symbol low 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+  here high
+installing local symbol high 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+REINITIALIZED
+local symbols initialized
+HERE
+installing symbol partition
+searching symbol partition
+creating Symbol
+binding Address to symbol
+installed symbol
+
+    here low
+installing local symbol low 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+ here high
+installing local symbol high 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+REINITIALIZED
+local symbols initialized
+HERE
+installing symbol quicksort
+searching symbol quicksort
+creating Symbol
+binding Address to symbol
+installed symbol
+
+
+
+  here index
+installing local symbol index 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+  here newindex
+installing local symbol newindex 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+
+
+  
+     installing local symbol s 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+  
+
+  
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+searching symbol arr
+found symbol
+EVALUATING ASSIGNMENT
+
+    searching the local symbol table
+found symbol
+ searching symbol arr
+found symbol
+ searching the local symbol table
+found symbol
+searching symbol arr
+found symbol
+EVALUATING ASSIGNMENT
+
+    searching the local symbol table
+found symbol
+ searching symbol arr
+found symbol
+ searching the local symbol table
+found symbol
+EVALUATING ASSIGNMENT
+
+
+     searching the local symbol table
+found symbol
+
+  
+Here-1 
+searching symbol swap
+found symbol
+Here0 
+Here1 
+ curr->name :index
+searching the local symbol table
+found symbol
+parameter bind -3 curr->name :newindex
+searching the local symbol table
+found symbol
+parameter bind -4Here 
+Generating code
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Allocating R1
+Allocating R2
+Allocating R3
+Allocating R4
+local MOV R4, -3
+freeing R4
+freeing R3
+freeing R2
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+Allocating R1
+Allocating R2
+local MOV R2, -3
+freeing R2
+freeing R1
+Got reference
+Allocating R1
+Allocating R2
+Allocating R3
+Allocating R4
+local MOV R4, -4
+freeing R4
+freeing R3
+freeing R2
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+Allocating R1
+Allocating R2
+local MOV R2, -4
+freeing R2
+freeing R1
+Got reference
+Allocating R1
+Allocating R2
+local MOV R2, 1
+freeing R2
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+
+  here temp
+installing local symbol temp 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+
+
+  
+     installing local symbol count 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+  
+
+  
+    searching the local symbol table
+found symbol
+EVALUATING ASSIGNMENT
+
+
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+ 
+      searching the local symbol table
+found symbol
+searching symbol arr
+found symbol
+
+      searching the local symbol table
+found symbol
+searching the local symbol table
+found symbol
+typechecking
+EVALUATING ASSIGNMENT
+
+    
+
+     searching the local symbol table
+found symbol
+
+  
+Here-1 
+searching symbol readarr
+found symbol
+Here0 
+Here1 
+ curr->name :temp
+searching the local symbol table
+found symbol
+parameter bind -3Here 
+Generating code
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Allocating R1
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 1
+freeing R1
+Allocating R1
+Allocating R2
+local MOV R2, -3
+freeing R2
+freeing R1
+freeing R0
+Generating code
+Allocating R0
+Allocating R1
+Allocating R2
+local MOV R2, 1
+freeing R2
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Allocating R1
+Allocating R2
+local MOV R2, 1
+freeing R2
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+
+  here temp
+installing local symbol temp 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+
+
+  
+     installing local symbol count 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+  
+
+  
+     searching the local symbol table
+found symbol
+ EVALUATING ASSIGNMENT
+
+
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+ 
+      searching the local symbol table
+found symbol
+searching symbol arr
+found symbol
+
+       searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+EVALUATING ASSIGNMENT
+
+    
+
+     searching the local symbol table
+found symbol
+
+  
+Here-1 
+searching symbol writearr
+found symbol
+Here0 
+Here1 
+ curr->name :temp
+searching the local symbol table
+found symbol
+parameter bind -3Here 
+Generating code
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Allocating R1
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 1
+freeing R1
+Allocating R1
+Allocating R2
+local MOV R2, -3
+freeing R2
+freeing R1
+freeing R0
+Generating code
+Allocating R0
+Allocating R1
+Allocating R2
+Allocating R3
+local MOV R3, 1
+freeing R3
+freeing R2
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Allocating R1
+Allocating R2
+local MOV R2, 1
+freeing R2
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+
+   here low
+installing local symbol low 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+  here high
+installing local symbol high 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+
+
+  
+     installing local symbol t 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installing local symbol pivot 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+     installing local symbol j 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installing local symbol i 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+  
+
+  
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+searching symbol arr
+found symbol
+EVALUATING ASSIGNMENT
+
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+EVALUATING ASSIGNMENT
+
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+EVALUATING ASSIGNMENT
+
+
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+ 
+       searching the local symbol table
+found symbol
+ searching symbol arr
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+ 
+       searching the local symbol table
+found symbol
+   searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+Function Call Heresearching symbol swap
+found symbol
+EVALUATING ASSIGNMENT
+
+       searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+EVALUATING ASSIGNMENT
+
+      
+      searching the local symbol table
+found symbol
+searching the local symbol table
+found symbol
+typechecking
+EVALUATING ASSIGNMENT
+
+    
+
+     searching the local symbol table
+found symbol
+   searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+Function Call Heresearching symbol swap
+found symbol
+EVALUATING ASSIGNMENT
+
+    
+     searching the local symbol table
+found symbol
+
+  
+Here-1 
+searching symbol partition
+found symbol
+Here0 
+Here1 
+ curr->name :low
+searching the local symbol table
+found symbol
+parameter bind -3 curr->name :high
+searching the local symbol table
+found symbol
+parameter bind -4Here 
+Generating code
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 2
+Got reference
+Allocating R1
+Allocating R2
+Allocating R3
+Allocating R4
+local MOV R4, -4
+freeing R4
+freeing R3
+freeing R2
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 3
+Got reference
+Allocating R1
+Allocating R2
+local MOV R2, -3
+freeing R2
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 4
+Got reference
+Allocating R1
+Allocating R2
+local MOV R2, -3
+freeing R2
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 4
+freeing R1
+Allocating R1
+Allocating R2
+local MOV R2, -4
+freeing R2
+freeing R1
+freeing R0
+Generating code
+Allocating R0
+Allocating R1
+Allocating R2
+Allocating R3
+local MOV R3, 4
+freeing R3
+freeing R2
+freeing R1
+Allocating R1
+Allocating R2
+local MOV R2, 2
+freeing R2
+freeing R1
+freeing R0
+Generating code
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Generating code for function call
+Backing up regs
+Allocating R0
+Allocating R1
+local MOV R1, 3
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 4
+freeing R1
+freeing R0
+Pushed all the args!
+Generated code for function call
+Allocating R1
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 3
+Got reference
+Allocating R1
+Allocating R2
+local MOV R2, 3
+freeing R2
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+Generating code
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 4
+Got reference
+Allocating R1
+Allocating R2
+local MOV R2, 4
+freeing R2
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 4
+Got reference
+Generating code for function call
+Backing up regs
+Allocating R0
+Allocating R1
+local MOV R1, -4
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 3
+freeing R1
+freeing R0
+Pushed all the args!
+Generated code for function call
+Allocating R1
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 3
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+
+
+
+   here low
+installing local symbol low 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+   here high
+installing local symbol high 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installin parametr 
+
+
+  
+     installing local symbol t 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installing local symbol temp 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+installing local symbol pp 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+  
+
+  
+
+      searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+ 
+       searching the local symbol table
+found symbol
+   searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+Function Call Heresearching symbol partition
+found symbol
+EVALUATING ASSIGNMENT
+
+       searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+searching the local symbol table
+found symbol
+Function Call Heresearching symbol quicksort
+found symbol
+EVALUATING ASSIGNMENT
+
+       searching the local symbol table
+found symbol
+  searching the local symbol table
+found symbol
+ searching the local symbol table
+found symbol
+typechecking
+Function Call Heresearching symbol quicksort
+found symbol
+EVALUATING ASSIGNMENT
+
+    
+
+     
+  
+Here-1 
+searching symbol quicksort
+found symbol
+Here0 
+Here1 
+ curr->name :low
+searching the local symbol table
+found symbol
+parameter bind -3 curr->name :high
+searching the local symbol table
+found symbol
+parameter bind -4Here 
+Generating code
+Allocating R0
+Allocating R1
+local MOV R1, -3
+freeing R1
+Allocating R1
+Allocating R2
+local MOV R2, -4
+freeing R2
+freeing R1
+freeing R0
+Generating code
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 3
+Got reference
+Generating code for function call
+Backing up regs
+Allocating R0
+Allocating R1
+local MOV R1, -4
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, -3
+freeing R1
+freeing R0
+Pushed all the args!
+Generated code for function call
+Allocating R1
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 2
+Got reference
+Generating code for function call
+Backing up regs
+Allocating R0
+Allocating R1
+local MOV R1, -4
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 3
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+Pushed all the args!
+Generated code for function call
+Allocating R1
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Generating code for function call
+Backing up regs
+Allocating R0
+Allocating R1
+local MOV R1, 3
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, -3
+freeing R1
+freeing R0
+Pushed all the args!
+Generated code for function call
+Allocating R1
+freeing R1
+freeing R0
+Generating code
+Allocating R0
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+
+ 
+
+  
+     installing local symbol junk 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+     installing local symbol temp 
+searching the local symbol table
+how about here
+creating Symbol
+binding Address to symbol
+installed local symbol
+Setting Type
+
+  
+
+  
+
+    searching the local symbol table
+searching in global scope n
+searching symbol n
+found symbol
+
+     searching the local symbol table
+found symbol
+ searching the local symbol table
+searching in global scope n
+searching symbol n
+found symbol
+Function Call Heresearching symbol readarr
+found symbol
+EVALUATING ASSIGNMENT
+
+     searching the local symbol table
+found symbol
+
+  
+installing symbol main
+searching symbol main
+creating Symbol
+binding Address to symbol
+installed symbol
+binding Address to symbol
+Generating code
+Allocating R0
+not local MOV R0, 4106
+Allocating R1
+freeing R1
+freeing R0
+Generating Code for Assignment
+Allocating R0
+local MOV R0, 1
+Got reference
+Generating code for function call
+Backing up regs
+Allocating R0
+Allocating R1
+local MOV R1, 4106
+freeing R1
+freeing R0
+Pushed all the args!
+Generated code for function call
+Allocating R1
+freeing R1
+freeing R0
+Allocating R0
+Allocating R1
+local MOV R1, 1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+local symbols initialized
+
+Generating code
+Code Generated!

@@ -13,9 +13,16 @@ enddecl
 int main() {
     decl
         int a;
+    int b;
     enddecl
 begin
-    MyList.data = a;
+    a = initialize();
+    MyList = alloc();
+    MyList.next = alloc();
+    read(MyList.data);
+    write(MyList.data);
+    read(MyList.next.data);
+    write(MyList.next.data);
     MyList.next.data = a;
 end
 }

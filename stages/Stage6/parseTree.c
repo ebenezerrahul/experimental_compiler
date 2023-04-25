@@ -96,10 +96,10 @@ void genCodeStmt(Snode *curr) {
     free_reg();
   } else if (curr->stmt_type == allocStatement) {
     int temp = get_reg();
-    fprintf(target_file, "MOV R%d, %d\n", temp,
-            curr->reference->data_type->size);
     fprintf(target_file, "MOV R%d, \"Alloc\"\n", temp);
     fprintf(target_file, "PUSH R%d\n", temp);
+    fprintf(target_file, "MOV R%d, %d\n", temp,
+            curr->reference->data_type->size);
     fprintf(target_file, "PUSH R%d\n", temp);
     fprintf(target_file, "PUSH R%d\n", temp);
     fprintf(target_file, "PUSH R%d\n", temp);

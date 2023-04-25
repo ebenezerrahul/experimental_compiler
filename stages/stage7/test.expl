@@ -1,0 +1,24 @@
+decl
+int sum(int a);
+enddecl
+
+int sum(int a) {
+    decl
+        int b;
+    enddecl
+    begin
+    write(a);
+    a = 5;
+    return a;
+    end
+}
+
+int main() {
+    decl
+        int a;
+    enddecl
+    begin
+    a = sum(10);
+    write(a);
+    end
+}

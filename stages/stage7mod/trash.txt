@@ -1,0 +1,679 @@
+symbols initialized
+
+ ID
+installing symbol
+creating Symbol
+binding Address to symbol
+installed symbol
+
+ ID
+installing symbol
+creating Symbol
+binding Address to symbol
+installed symbol
+
+ ID
+installing symbol
+creating Symbol
+binding Address to symbol
+installed symbol
+
+ ID
+installing symbol
+creating Symbol
+binding Address to symbol
+installed symbol
+
+ ID
+installing symbol
+creating Symbol
+binding Address to symbol
+installed symbol
+curr_name : (null)
+
+Setting Type
+Setting Type
+Setting Type
+Setting Type
+Setting Type
+WHAT!!!
+ 
+
+ID
+ found symbol
+ 
+ID
+ found symbol
+ ID
+ found symbol
+HOW
+ typechecking
+
+ID
+ found symbol
+HOW
+ typechecking
+  
+    ID
+ found symbol
+ ID
+ found symbol
+HOW
+ ID
+found symbol
+HOW
+typechecking
+
+    ID
+found symbol
+HOW
+
+    ID
+ found symbol
+HOW
+ typechecking
+ 
+    
+    
+
+
+
+ID
+ found symbol
+ 
+ID
+ found symbol
+HOW
+ typechecking
+  
+    ID
+ID
+found symbol
+HOW
+found symbol
+
+    ID
+found symbol
+HOW
+
+    ID
+ found symbol
+ ID
+ found symbol
+HOW
+typechecking
+
+
+
+
+
+ID
+ found symbol
+ 
+ID
+ found symbol
+HOW
+ typechecking
+  
+    ID
+ID
+found symbol
+HOW
+found symbol
+HOW
+
+    ID
+ found symbol
+ ID
+ found symbol
+HOW
+ typechecking
+
+
+
+ID
+ found symbol
+ 
+ID
+ found symbol
+ 
+ID
+ found symbol
+HOW
+ typechecking
+  
+    ID
+ found symbol
+ 
+    ID
+ found symbol
+HOW
+ typechecking
+  
+        ID
+ID
+found symbol
+HOW
+ID
+found symbol
+HOW
+found symbol
+dimensions 2
+
+        ID
+ found symbol
+ ID
+ found symbol
+HOW
+ typechecking
+
+    
+    ID
+ found symbol
+ ID
+ found symbol
+HOW
+ typechecking
+
+
+
+ID
+ found symbol
+ 
+ID
+ found symbol
+ 
+ID
+ found symbol
+HOW
+ typechecking
+  
+    ID
+ found symbol
+ 
+    ID
+ found symbol
+HOW
+ typechecking
+  
+        ID
+ID
+found symbol
+HOW
+ID
+found symbol
+HOW
+found symbol
+dimensions 2
+HOW
+
+        ID
+ found symbol
+ ID
+ found symbol
+HOW
+ typechecking
+
+    
+    ID
+ found symbol
+ ID
+ found symbol
+HOW
+ typechecking
+
+
+
+
+
+
+ 
+binding Address to symbol
+stmt type : 3
+stmt type : 3
+stmt type : 2
+stmt type : 3
+stmt type : 2
+stmt type : 4
+stmt type : 3
+stmt type : 2
+stmt type : 3
+stmt type : 3
+stmt type : 2
+stmt type : 3
+stmt type : 3
+stmt type : 2
+stmt type : 4
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R2
+getting reference
+Allocating R3
+freeing R3
+freeing R2
+freeing R1
+freeing R0
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+DIMENSIONS : 1
+Allocating R0
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+EV E
+WHY!!!!!
+Allocating R0
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+DIMENSIONS : 1
+Allocating R1
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R2
+getting reference
+Allocating R3
+freeing R3
+freeing R2
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+DIMENSIONS : 2
+TWO DIMENSIONS
+Allocating R0
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+freeing R1
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+Allocating R1
+freeing R1
+EV E
+WHY!!!!!
+Allocating R1
+freeing R1
+freeing R0
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R0
+getting reference
+DIMENSIONS : 2
+TWO DIMENSIONS
+Allocating R1
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R2
+getting reference
+Allocating R3
+freeing R3
+freeing R2
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R2
+getting reference
+Allocating R3
+freeing R3
+freeing R2
+freeing R1
+Allocating R1
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+getting reference
+Allocating R0
+DONE
+EV E
+EV E
+WHY!!!!!
+Evaluating Reference
+Allocating R1
+getting reference
+Allocating R2
+freeing R2
+EV E
+WHY!!!!!
+Allocating R2
+freeing R2
+freeing R1
+freeing R0
+EV E
+WHY!!!!!
+Allocating R0
+Allocating R1
+freeing R1
+freeing R0
+Code Generated!
