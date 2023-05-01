@@ -1,0 +1,100 @@
+class
+Person{
+	decl
+		string name;
+		int age;
+	enddecl
+	decl
+		int printDetails();
+		string findName();
+		int createPerson(string name, int age);
+	enddecl
+	int printDetails(){
+		decl
+		enddecl
+		begin
+			write(self.name);
+			write(self.age);
+			return 1;
+		end
+	}
+	string findName(){
+		decl
+		enddecl
+		begin
+			return self.name;
+		end
+	}
+	int createPerson(string name, int age){
+		decl
+		enddecl
+		begin
+			self.name= name;
+			self.age= age;
+			return 1;
+		end
+	}
+}    
+Student extends Person{
+	
+	decl
+		int rollnumber;               
+		string dept;
+	enddecl
+	decl
+		int printDetails();
+		int createStudent(string name, int age,int rollNo, string dept);
+	enddecl
+  	int createStudent(string name, int age,int rollNo, string dept){  
+		decl
+		enddecl
+		begin
+			self.name =name;
+           		self.age = age;
+            		self.rollnumber = rollNo;
+            		self.dept = dept;
+            		return 1;
+		end
+	}
+	int printDetails(){  
+		decl
+		enddecl
+		begin
+			write(self.name);
+			write(self.age);
+			write(self.rollnumber);
+			write(self.dept);
+			return 1;
+		end
+	}        
+}  
+endclass
+
+decl
+    int n,temp;
+    string name;
+    Person first;
+    Student second;
+    Person arbitrary;
+enddecl
+
+int main(){
+         decl
+         enddecl
+         begin
+             n = initialize();
+             first=new(Person);
+             temp = first.createPerson("Rogers", 37);               
+             second=new(Student);
+             breakpoint;
+             temp = second.createStudent("Mathew", 89, 999, "CS");  
+             read(n);                                             
+             if (n>0) then
+                 arbitrary = first;
+             else
+                 arbitrary = second;
+             endif; 
+             n = arbitrary.printDetails();                                                 
+             return 0;
+         end
+         }

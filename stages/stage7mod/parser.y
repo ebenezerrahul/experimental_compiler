@@ -17,6 +17,7 @@ ClassTable *Cptr;
 
 int getLabel();
 struct drefList *createdrefList(char*);
+ClassTable *searchClassTable(char *);
 %}
 
 
@@ -107,6 +108,12 @@ PRIVATEDECLBLOCK                :  FEILD_DEFINATION_LIST
                                 {
                                     addType(Cptr->name, calculateSizeOfFeilds($<feilds>1), $<feilds>1);
                                     checkForDuplicateFeilds($<feilds>1);
+                                    initializeFeildTypes();
+                                }
+                                | 
+                                {
+                                    addType(Cptr->name, calculateSizeOfFeilds(NULL), NULL);
+                                    checkForDuplicateFeilds(NULL);
                                     initializeFeildTypes();
                                 }
                                 ;
